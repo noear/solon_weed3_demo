@@ -7,7 +7,7 @@
 	<artifactId>demo2_not_anno</artifactId>
 	<version>dev</version>
 
-	<name>${artifactId}</name>
+	<name>${project.artifactId}</name>
 	<description>solon_weed3_demo2</description>
 
 	<properties>
@@ -108,7 +108,7 @@
 					</descriptorRefs>
 					<archive>
 						<manifest>
-							<mainClass>top.javawx.weed3.App</mainClass>
+							<mainClass>webapp.Demo2App</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
