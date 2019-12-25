@@ -13,5 +13,4 @@ public class Demo2App {
 		DemoController tmp = Aop.get(DemoController.class);
 		System.out.println(tmp.helloWorld());
 	}
-
 }
