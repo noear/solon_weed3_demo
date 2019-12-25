@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- namespace 不包括文件名; 这点与mybatis不同 -->
+<mapper namespace="webapp.dso.mapper"
+        import="webapp.model.*"
+        :baseMapper="Demo">
+    <sql id="demo_get2" :return="Demo">
+        select * from demo where id=@{id:int}
+    </sql>
+
+    <sql id="demo_get3" :return="List[Demo]" :remarks="测试">
+        select * from demo limit 10;
+    </sql>
+</mapper>
