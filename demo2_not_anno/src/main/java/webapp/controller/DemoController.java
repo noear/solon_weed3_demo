@@ -14,8 +14,7 @@ import webapp.model.Demo;
 @XMapping("/demo")
 public class DemoController {
 
-	DbContext db = Config.db();
-	DemoMapper demoMapper = db.mapper(DemoMapper.class);
+	DemoMapper demoMapper = Config.db().mapper(DemoMapper.class);
 
 	@XMapping("hello")
 	public Object helloWorld() throws Exception{
