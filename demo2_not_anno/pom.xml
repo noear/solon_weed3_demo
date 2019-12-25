@@ -8,7 +8,7 @@
 	<version>dev</version>
 
 	<name>${project.artifactId}</name>
-	<description>solon_weed3_demo2</description>
+	<description>solon_weed3_demo 非注解模式，可以有更好的启动性能!</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

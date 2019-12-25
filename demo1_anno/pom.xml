@@ -8,7 +8,7 @@
 	<version>dev</version>
 
 	<name>${project.artifactId}</name>
-	<description>solon_weed3_demo1</description>
+	<description>solon_weed3_demo 注解模式</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
