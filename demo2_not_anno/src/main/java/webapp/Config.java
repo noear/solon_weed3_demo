@@ -14,6 +14,7 @@ public class Config {
         //打印执行代码
         WeedConfig.onExecuteBef((cmd) -> {
             System.out.println(cmd.text);
+            System.out.println(cmd.paramMap());
             return true;
         });
     }
