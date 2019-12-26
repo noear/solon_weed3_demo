@@ -10,13 +10,14 @@ import java.time.LocalDate;
 @Table("demo")
 public class Demo {
 	@PrimaryKey
-	public Long id;
-	
-	public String name;
-	
-	public Long age;
-	
-	public String hobby;
-	
-	public LocalDate birthday;
+	private Long id;
+
+	private String name;
+
+	private Long age;
+
+	private String hobby;
+
+	private LocalDate birthday;
 }
+

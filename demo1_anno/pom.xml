@@ -15,7 +15,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 
-		<weed.ver>3.2.6</weed.ver>
+		<weed.ver>3.2.6.2</weed.ver>
 	</properties>
 
 	<dependencies>
