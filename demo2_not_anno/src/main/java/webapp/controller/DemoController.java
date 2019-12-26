@@ -17,7 +17,7 @@ public class DemoController {
 	DemoMapper demoMapper = Config.db().mapper(DemoMapper.class);
 
 	@XMapping("hello")
-	public Object helloWorld() throws Exception{
+	public Object helloWorld() throws Exception {
 
 		StatService.stat();
 
@@ -26,9 +26,13 @@ public class DemoController {
 		Demo demo = demoMapper.demo_get2(1);
 
 		ModelAndView mv = new ModelAndView("hello.ftl");
-		mv.put("m",demo);
+		mv.put("m", demo);
 
 		return mv;
 	}
 
+	@XMapping("hello2")
+	public Object hello2() throws Exception {
+		return Config.db().table("demo").limit(1).select("*").getMap();
+	}
 }
