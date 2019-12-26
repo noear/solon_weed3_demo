@@ -1,9 +1,9 @@
 # solon weed3 demo
 
 #### 这是一个用户写的示例：
-* demo1:比较裸的使用weed3
-* demo2:注解模式使用weed3
-* demo3:非注解模式使用weed3。
+* demo0_simple: 比较裸的使用weed3
+* demo1_anno: 注解模式使用weed3
+* demo2_not_anno: 非注解模式使用weed3。
 
 三者，可以对比性的了解框架应用方式。
 
