@@ -18,6 +18,7 @@
 
 
     <modules>
+        <module>demo0_simple</module>
         <module>demo1_anno</module>
         <module>demo2_not_anno</module>
     </modules>
