@@ -2,8 +2,7 @@
 <!-- namespace 不包括文件名; 这点与mybatis不同 -->
 <mapper namespace="webapp.dso.mapper"
         import="webapp.model.*"
-        :baseMapper="Demo"
-        :db="test.db">
+        :baseMapper="Demo">
     <sql id="demo_get2" :return="Demo">
         select * from demo where id=@{id:int}
     </sql>

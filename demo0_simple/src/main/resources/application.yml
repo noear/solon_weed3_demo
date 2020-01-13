@@ -15,6 +15,15 @@ test.db:
   password: UL0hHlg0Ybq60xyb
   driverClassName: com.mysql.jdbc.Driver
 
+
+# 适合 weed3 的配置（演示多数据源用）
+test.db2:
+  schema: rock
+  url: jdbc:mysql://localdb:3306/rock?useSSL=false&useUnicode=true&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=true
+  username: demo
+  password: UL0hHlg0Ybq60xyb
+  driverClassName: com.mysql.jdbc.Driver
+
 # 适合 HikariCP 的配置
 #test.db:
 #  schema: rock

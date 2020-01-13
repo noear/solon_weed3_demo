@@ -31,4 +31,22 @@ public class Config {
 
         return new DbContext(prop.getProperty("schema"), dataSource);
     }
+
+    /**
+     * 多数据源演法
+     *
+     * 例：
+     * @Db("test.db2")
+     * public interface StatMapper {
+     *     //用于处理复杂的统计查询
+     *     @Sql("#tml_test.sql")
+     *     Demo tml_test(int id);
+     * }
+     * */
+    @XBean("test.db2")
+    public DbContext db2() throws Exception {
+        Properties prop = XApp.cfg().getProp("test.db2");
+        DataSource dataSource = new HikariDataSource(new HikariConfig(prop));
+        return new DbContext(prop.getProperty("schema"), dataSource);
+    }
 }

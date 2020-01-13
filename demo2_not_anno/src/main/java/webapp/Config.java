@@ -31,4 +31,17 @@ public class Config {
 
         return _db;
     }
+
+    private static DbContext _db2;
+    public static DbContext db2() {
+        if (_db2 == null) {
+            Properties prop = XApp.cfg().getProp("test.db2");
+
+            DataSource dataSource = new HikariDataSource(new HikariConfig(prop));
+
+            _db2 = new DbContext(prop.getProperty("schema"), dataSource);
+        }
+
+        return _db2;
+    }
 }

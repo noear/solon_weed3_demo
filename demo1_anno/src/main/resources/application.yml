@@ -23,3 +23,10 @@ test.db:
   password: UL0hHlg0Ybq60xyb
   driverClassName: com.mysql.jdbc.Driver
 
+test.db2:
+  schema: rock
+  jdbcUrl: jdbc:mysql://localdb:3306/rock?useSSL=false&useUnicode=true&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=true
+  username: demo
+  password: UL0hHlg0Ybq60xyb
+  driverClassName: com.mysql.jdbc.Driver
+

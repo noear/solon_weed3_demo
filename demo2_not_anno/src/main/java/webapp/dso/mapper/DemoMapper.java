@@ -11,7 +11,6 @@ import org.noear.weed.annotation.Db;
 import org.noear.weed.xml.Namespace;
 import webapp.model.*;
 
-@Db("test.db")
 @Namespace("webapp.dso.mapper")
 public interface DemoMapper extends BaseMapper<Demo>{
     Demo demo_get2(int id) throws Exception;

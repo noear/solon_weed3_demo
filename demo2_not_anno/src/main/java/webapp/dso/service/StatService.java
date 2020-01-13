@@ -5,7 +5,7 @@ import webapp.dso.mapper.StatMapper;
 
 public class StatService {
 
-    static StatMapper statMapper = Config.db().mapper(StatMapper.class);
+    static StatMapper statMapper = Config.db2().mapper(StatMapper.class);
 
     public static void stat(){
         System.out.println("我要统计了:");

@@ -23,10 +23,13 @@ public class Demo0App {
 
 		//创建DbContext实例
 		DbContext db = new DbContext(XApp.cfg().getProp("test.db"));
+		DbContext db2 = new DbContext(XApp.cfg().getProp("test.db2"));
 
 		//执行测试
 		test0(db);
 		test1(db);
+
+		test0(db2);//另一个数据源
 	}
 
 	public static void test0(DbContext db) throws Exception {
