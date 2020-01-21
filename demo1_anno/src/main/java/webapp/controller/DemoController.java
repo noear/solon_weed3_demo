@@ -24,7 +24,6 @@ public class DemoController {
 
 	@XMapping("hello")
 	public Object helloWorld() throws Exception{
-
 		statService.stat();
 
 		System.out.println(demoMapper.demo_get3());
